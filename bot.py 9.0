@@ -478,3 +478,5 @@ output.tag_config("white", foreground=FG)
 
 threading.Thread(target=start_bot, daemon=True).start()
 root.mainloop()
+
+print("ss")
