@@ -13,7 +13,9 @@ from pathlib import Path
 VERSION    = "1.0"
 UPDATE_URL = "https://raw.githubusercontent.com/palexx7106-commits/bot.py/refs/heads/main/bot.py%202.0"
 
-def check_for_update():
+SCRIPT_DIR = Path(sys.argv[0]).resolve().parent
+
+def _do_update():
     try:
         req = urllib.request.Request(
             UPDATE_URL,
@@ -33,19 +35,25 @@ def check_for_update():
                 break
 
         if remote_version and remote_version != VERSION:
-            script_path = os.path.abspath(sys.argv[0])
+            script_path = str(SCRIPT_DIR / "bot.py")
             with open(script_path, "w", encoding="utf-8") as f:
                 f.write(content)
-            flags = 0
-            if hasattr(subprocess, "CREATE_NEW_CONSOLE") and sys.platform == "win32":
-                flags = subprocess.CREATE_NEW_CONSOLE
+            log("update found - restarting...", "green")
+            import time; time.sleep(2)
+            flags = subprocess.CREATE_NEW_CONSOLE if sys.platform == "win32" else 0
             subprocess.Popen([sys.executable, script_path], creationflags=flags)
             sys.exit(0)
-
     except Exception:
         pass
 
-check_for_update()
+def _update_loop():
+    import time
+    while True:
+        _do_update()
+        time.sleep(1800)
+
+_do_update()
+threading.Thread(target=_update_loop, daemon=True).start()
 
 _token_file = Path.home() / "Downloads" / "token discrod thing"
 try:
