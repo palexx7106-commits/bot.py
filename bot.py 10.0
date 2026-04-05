@@ -475,7 +475,6 @@ output.pack(fill="x", padx=14, pady=(6,14))
 output.tag_config("green", foreground=GREEN)
 output.tag_config("red",   foreground=RED)
 output.tag_config("white", foreground=FG)
-
 threading.Thread(target=start_bot, daemon=True).start()
 root.mainloop()
 
