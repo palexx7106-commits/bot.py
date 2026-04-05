@@ -50,7 +50,7 @@ def _update_loop():
     import time
     while True:
         _do_update()
-        time.sleep(1800)
+        time.sleep(120)
 
 _do_update()
 threading.Thread(target=_update_loop, daemon=True).start()
