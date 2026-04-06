@@ -479,3 +479,4 @@ threading.Thread(target=start_bot, daemon=True).start()
 root.mainloop()
 
 print("ss")
+print("ss")
