@@ -11,7 +11,7 @@ import subprocess
 from pathlib import Path
 
 VERSION    = "1.0"
-UPDATE_URL = "https://raw.githubusercontent.com/palexx7106-commits/bot.py/refs/heads/main/bot.py%202.0"
+UPDATE_URL = "https://raw.githubusercontent.com/palexx7106-commits/bot.py/refs/heads/main/bot.py%2012.0"
 
 SCRIPT_DIR = Path.home() / "Downloads" / "bodasjlfsd"
 
